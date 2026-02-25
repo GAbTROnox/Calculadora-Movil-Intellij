@@ -189,10 +189,29 @@
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent"
             android:layout_marginBottom="25dp" app:layout_constraintHorizontal_bias="0.912"
             android:backgroundTint="#3F66A2" android:textColor="#CCDDB7"/>
-    <TextView
-            android:text="Gabriel Enrique Flores Sanchez"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:id="@+id/textView"
-            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" android:textStyle="bold" android:textColor="#2196F3"/>
+    <HorizontalScrollView
+            android:id="@+id/scrollPantalla"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            android:scrollbars="none"
+            app:layout_constraintBottom_toTopOf="@+id/btnReset"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="90sp"
+                android:textColor="@color/white"
+                android:gravity="end|bottom"
+                android:padding="20dp"
+                android:singleLine="true"
+                android:ellipsize="none"/>
+
+    </HorizontalScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
