@@ -206,7 +206,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="0"
-                android:textSize="90sp"
+                android:textSize="60sp"
                 android:textColor="@color/white"
                 android:gravity="end|bottom"
                 android:padding="20dp"
@@ -214,4 +214,11 @@
                 android:ellipsize="none"/>
 
     </HorizontalScrollView>
+    <TextView
+            android:text="GABRIEL ENRIQUE FLORES SAMCHEZ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView3"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="10dp" android:textStyle="bold"
+            android:textColor="#2196F3"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
